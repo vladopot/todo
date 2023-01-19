@@ -1,0 +1,153 @@
+/* .container1{
+	border: 1px solid black;
+	margin-right: 0.5%;
+	width: 17%;
+	height: 100%;
+	float: left;
+}
+.container2{
+	border: 1px solid black;
+	margin-right: 0.5%;
+	width: 80%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.container3{
+	border: 1px solid black;
+	margin-right: 0.5%;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.input__text{
+	width: 90%;
+}
+.todo_options{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+[data-todo-option ="active"] .item:not([data-todo-state="active"]),
+[data-todo-option ="completed"] .item:not([data-todo-state="completed"]){
+	display: none;
+} */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.header {
+	position: relative;
+	width: 100%;
+	height: 5%;
+	min-height: 30px;
+	background-color: rgb(194, 194, 194);
+}
+.list {
+	position: relative;
+	margin: auto;
+	width: 65%;
+	min-height: 100%;
+	background-color: rgb(187, 187, 187);
+}
+.options {
+	position: relative;
+	width: 20%;
+	height: 5%;
+	left: 105%;
+	top: 2%;
+}
+.input {
+	display: inline-block;
+	position: relative;
+	width: 80%;
+	height: 3%;
+	top: 1%;
+	left: 10%;
+}
+.input_text {
+	position: relative;
+	height: 100%;
+	width: 90%;
+}
+.add_btn {
+	position: absolute;
+	min-height: 80%;
+	top: 2px;
+	width: 5%;
+}
+.sort_btn {
+	position: absolute;
+	min-height: 80%;
+	top: 15px;
+	left: 101%;
+	width: 10%;
+}
+.todo {
+	position: relative;
+	margin: auto;
+	top: 3%;
+	width: 80%;
+	min-height: 100%;
+}
+li {
+	position: relative;
+    list-style-type: none;
+	width: 99%;
+	padding: 5px;
+	text-align:justify;
+	word-break:break-all;
+	background-color: rgb(194, 194, 194);
+	border-radius: 10px;
+	margin-top: 3%;
+}
+ul {
+	position: relative;
+    margin-left: 0;
+    padding-left: 0;
+	width: 65%;
+	height: 85%;
+}
+.date {
+	padding: 1px;
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+.control_panel {
+	position: absolute;
+	width: 40%;
+	max-height: 100%;
+	left: 100%;
+	top: 0;
+	background-color: rgb(162, 229, 145);
+	border-radius: 5px;
+	display: none;
+}
+.del_btn, .done_btn, .notDone_btn {
+	width: 40%;
+	min-height: 25px;
+	max-height: 70px;
+	margin: 5px;
+}
+.elem:hover .control_panel {
+	display: block;
+}
+li[data-status = "active"] .notDone_btn,
+li[data-status = "completed"] .done_btn {
+	display: none;
+}
+[data-option="active"] .elem:not([data-status="active"]),
+[data-option="completed"] .elem:not([data-status="completed"]) {
+	display: none;
+}
+.ch_box{
+	position: absolute;
+	left: -5%;
+}
